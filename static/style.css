@@ -75,12 +75,15 @@ li {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
 }
 
 .search {
     grid-column: 1 / 2;
     display: flex;
+    padding: 0 4rem;
+    gap: 1rem;
 }
 
 .search-icon {
@@ -93,8 +96,59 @@ li {
     height: var(--search-bar-size);
     flex-grow: 1;
     border-style: none;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: lightgray;
+}
+
+.account {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notifications {
+    height: 2rem;
+    width: 2rem;
+}
+
+.account-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.greeting-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting-template {
+    font-weight: 500;
+}
+
+.greeting-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-button{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .content {
