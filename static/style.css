@@ -6,6 +6,7 @@
     --primary-color: #526E48;
     --secondary-color: #9EDF9C;
     --background-color: #F5F0E1;
+    --search-bar-size: 1.5rem;
 }
 
 body {
@@ -31,7 +32,7 @@ li {
 
 .dashboard {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: baseline;
     gap: 1rem;
     margin: 1rem;
@@ -73,6 +74,27 @@ li {
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.search {
+    grid-column: 1 / 2;
+    display: flex;
+}
+
+.search-icon {
+    height: var(--search-bar-size);
+    width: var(--search-bar-size);
+}
+
+.search-bar {
+    display: flex;
+    height: var(--search-bar-size);
+    flex-grow: 1;
+    border-style: none;
+    border-radius: 8px;
+    background-color: lightgray;
 }
 
 .content {
