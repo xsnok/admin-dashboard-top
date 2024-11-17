@@ -63,8 +63,14 @@ li {
 .user-link,
 .help-link {
     display: flex;
-    margin: 1rem;
+    padding: 1rem;
     gap: 1rem;
+    transition: 0.3s;
+}
+
+.user-link:hover,
+.help-link:hover {
+    background-color: #001e00;
 }
 
 .user-links img,
@@ -79,7 +85,7 @@ li {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .search {
@@ -87,6 +93,7 @@ li {
     display: flex;
     padding: 0 4rem;
     gap: 1rem;
+    margin: 1rem;
 }
 
 .search-icon {
@@ -117,6 +124,10 @@ li {
 .account-name {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.greeting {
+    padding: 1rem;
 }
 
 .greeting-text {
